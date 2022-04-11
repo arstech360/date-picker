@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>Calendar - UI</title>
+    <link rel="stylesheet" href="date.css">
+</head>
+
+
+<body>
+    <div class="container">
+      <div class="rearch-box">
+        <!-- doctor search field -->
+        <div class="doctor-search-fields">
+          <label for="dt-search-box" class="dt-src-lavel">Request for Doctor</label>
+          <div class="doctor-search">
+            <input class="dt-src-field" placeholder="Enter Doctor Name" type="text" id="dt-search-box">
+          </div>
+        </div>
+
+        <!-- calender-assets -->
+
+          <div class="calendar-assets">
+             
+              <div class="field">
+                  <label for="date" class="date-lavel">Request for data</label>
+                  <form class="form-input" id="date-search" onsubmit="setDate(this)">
+                      <input type="date" class="text-field" name="date" id="date" required>
+                      <button type="submit" class="btn btn-small" title="Pesquisar"><i class="fas fa-search"></i></button>
+                  </form>
+              </div>
+      </div>
+            
+
+    <script src="https://kit.fontawesome.com/812e771e48.js" crossorigin="anonymous"></script>
+    <script src="date.js"></script>
+</body>
+
+</html>
